@@ -1,6 +1,6 @@
 # vecmap
 
-Simple and fast map using `lower_bound` and `vector<pair<Key,T>>`.
+Fast C++ map using `lower_bound` and `vector<pair<Key,T>>`.
 
 ### Overview
 
