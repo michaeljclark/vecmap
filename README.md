@@ -16,14 +16,14 @@ accessed data structures where performance is critical.
 The following benchmarks were performed on an Intel Core i9-7980XE
 using GCC 9.2:
 
-|container |  spread|       limit|     time_us|
-|:-------- |  -----:|       ----:|     ------:|
-|vecmap    |     255|    10000000|      110068|
-|vecmap    |    1023|    10000000|      280931|
-|vecmap    |   16383|    10000000|      313900|
-|std::map  |     255|    10000000|       73975|
-|std::map  |    1023|    10000000|      327335|
-|std::map  |   16383|    10000000|      589225|
+|container |  spread|       count| time_ns|
+|:-------- |  -----:|       ----:| ------:|
+|std::map  |     255|    10000000|    10.4|
+|std::map  |    1023|    10000000|    30.9|
+|std::map  |   16383|    10000000|    52.7|
+|vecmap    |     255|    10000000|     8.7|
+|vecmap    |    1023|    10000000|    29.1|
+|vecmap    |   16383|    10000000|    31.0|
 
 ### Analysis
 
